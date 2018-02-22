@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="55dp"
+    android:weightSum="1">
+
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/classN"
+        android:textStyle="normal"
+        android:textAllCaps="true"
+        android:textColor="#800080"
+        android:text="Math"/>
+
+    <TextView
+        android:layout_width="56dp"
+        android:layout_height="36dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="IN"
+        android:textAlignment="center"
+        android:id="@+id/textView" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/batchN"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.14"
+            android:textStyle="normal"
+            android:textColor="#800080"
+            android:text="IT2K15"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textColor="#ff99ff"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/classView"/>
+
+    </LinearLayout>
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:checked="true"
+        android:clickable="false"
+        android:focusable="false" />
+
+</LinearLayout>

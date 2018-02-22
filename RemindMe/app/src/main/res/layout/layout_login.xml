@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="R"
+                android:background="@drawable/border"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:paddingTop="8dp"
+                android:textColor="#ff1a75"
+                android:layout_marginRight="4dp"
+                android:textAllCaps="true"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border"
+                android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:textColor="#ff1a75"
+                android:layout_marginRight="4dp"
+                android:text="E"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:textAllCaps="true"
+                android:textSize="22sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border"
+                android:layout_weight="1"
+                android:text="M"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:paddingTop="8dp"
+                android:textColor="#ff1a75"
+                android:layout_marginRight="4dp"
+                android:textAllCaps="true"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border"
+                android:layout_weight="1"
+                android:text="I"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:paddingTop="8dp"
+                android:textColor="#ff1a75"
+                android:layout_marginRight="4dp"
+                android:textAllCaps="true"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border"
+                android:layout_weight="1"
+                android:text="N"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:paddingTop="8dp"
+                android:textColor="#ff1a75"
+                android:layout_marginRight="4dp"
+                android:textAllCaps="true"
+                android:textSize="22sp"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border"
+                android:layout_weight="1"
+                android:text="D"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:paddingTop="8dp"
+                android:textColor="#ff1a75"
+                android:layout_marginRight="4dp"
+                android:textAllCaps="true"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border"
+                android:layout_weight="1"
+                android:text="M"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:paddingTop="8dp"
+                android:textColor="#ff1a75"
+                android:layout_marginRight="4dp"
+                android:textAllCaps="true"
+                android:textSize="22sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border"
+                android:layout_weight="1"
+                android:text="E"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:paddingTop="8dp"
+                android:textColor="#ff1a75"
+                android:layout_marginRight="4dp"
+                android:textAllCaps="true"
+                android:textSize="22sp"/>
+
+        </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-condensed"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:textColorHint="#ffffff"
+        android:theme="@style/TextLabel">
+        <EditText
+            android:id="@+id/user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:paddingTop="8dp"
+        android:theme="@style/TextLabel"
+        android:textColorHint="#ffffff"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@android:color/darker_gray">
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:password="true"
+            android:textColor="#ffffff" />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="16dp"
+        android:paddingRight="32dp"
+        android:paddingLeft="32dp">
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Remember me"/>
+
+    </LinearLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/loginbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:drawableRight="@drawable/arrow"
+            android:paddingRight="32dp"
+            android:background="@drawable/button"
+            android:elevation="0dp"
+            android:text="Done"
+            android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/skip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SKIP for NOW"
+        android:textAlignment="center"
+        android:textColor="#ffffff"/>
+
+
+    </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e6ecff"
+    tools:context="com.example.prince.remindme.SendMail">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#3333cc"
+        android:id="@+id/toolbar">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:paddingLeft="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="SeND mAil"
+            android:fontFamily="casual"
+            android:textStyle="italic"
+            android:textSize="32sp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TO  : "
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="#595959"
+        android:paddingLeft="16dp"
+        android:layout_marginTop="16dp"/>
+    <EditText
+        android:id="@+id/mailAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:textColor="#999966"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SUBJECT  : "
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="#595959"
+        android:paddingLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"/>
+    <EditText
+        android:id="@+id/mailSub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:textColor="#999966"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MESSAGE  : "
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="#595959"
+        android:paddingLeft="16dp"
+        android:layout_marginTop="16dp" />
+    <EditText
+        android:paddingTop="32dp"
+        android:id="@+id/mailMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:textColor="#999966"
+        android:textAlignment="viewStart"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="48dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:background="@drawable/button"
+        android:textColor="#ffffff"/>
+</LinearLayout>

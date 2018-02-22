@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.prince.remindme">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".SplashScreen"
+            android:theme="@style/AppTheme.nobar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainPage"
+            android:theme="@style/AppTheme.nobar"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <activity
+            android:name=".ActivityLogin"
+            android:theme="@style/AppTheme.nobar" />
+        <activity
+            android:name=".ActivitySignup"
+            android:theme="@style/AppTheme.nobar" />
+        <activity
+            android:name=".HomePage"
+            android:theme="@style/AppTheme.nobar" />
+        <activity
+            android:name=".ActivityAddClass"
+            android:theme="@style/AppTheme.nobar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ViewClasses"
+            android:theme="@style/AppTheme.nobar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".EditClass"
+            android:theme="@style/AppTheme.nobar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".AboutMe"
+            android:theme="@style/AppTheme.nobar" />
+        <activity
+            android:name=".SendMail"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.nobar" />
+        <activity
+            android:name=".CallActivity"
+            android:theme="@style/AppTheme.nobar" />
+
+        <receiver android:name=".AlarmRecieverClass" />
+        <receiver
+            android:name=".AutoRestart"
+            android:enabled="true"
+            android:exported="true"
+            android:label="AutoStartOnBootReciever">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".ResetAlarm"
+            android:enabled="true" />
+        <service
+            android:name=".RingtoneService"
+            android:enabled="true" />
+        <service
+            android:name=".NotificationService"
+            android:enabled="true" />
+
+
+    </application>
+
+</manifest>

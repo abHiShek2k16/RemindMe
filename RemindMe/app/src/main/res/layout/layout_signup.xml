@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#ff1a75">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:text="REMIND ME"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:paddingTop="8dp"
+        android:textColor="#ff1a75"
+        android:layout_marginRight="4dp"
+        android:textAllCaps="true"
+        android:textSize="22sp"/>
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:textColorHint="#ffffff"
+        android:theme="@style/TextLabel">
+
+        <EditText
+            android:id="@+id/editname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"/>
+    </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Mob No."
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:textColorHint="#ffffff"
+            android:theme="@style/TextLabel">
+
+            <EditText
+                android:id="@+id/editphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:textColorHint="#ffffff"
+            android:theme="@style/TextLabel"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@android:color/darker_gray">
+
+            <EditText
+                android:id="@+id/editpass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:password="true"
+                android:textColor="#ffffff" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/signuppagebutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:background="@drawable/button"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="16dp"
+            android:drawableRight="@drawable/arrow"
+            android:paddingRight="32dp"/>
+
+        </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

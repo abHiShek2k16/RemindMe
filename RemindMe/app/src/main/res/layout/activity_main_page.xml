@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.prince.remindme.MainPage"
+    android:background="#ff1a75">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/bussiness"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/backimageicon"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click Me After Connecting To Net"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:textStyle="italic"
+        android:fontFamily="cursive"
+        android:textColor="#ffff33"
+        android:id="@+id/checkconnection"/>
+
+
+  <TabHost
+      android:id="@+id/tabhost"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+      <TabWidget
+          android:id="@android:id/tabs"
+          android:layout_width="match_parent"
+          android:layout_height="48dp"
+          android:layout_margin="16dp"
+          android:background="@drawable/backtabinactive">
+      </TabWidget>
+
+      <FrameLayout
+          android:id="@android:id/tabcontent"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+             <include
+                 android:id="@+id/login"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 layout="@layout/layout_login">
+             </include>
+
+          <include
+              android:id="@+id/signup"
+              android:layout_height="match_parent"
+              android:layout_width="match_parent"
+              layout="@layout/layout_signup">
+          </include>
+      </FrameLayout>
+    </LinearLayout>
+  </TabHost>
+</LinearLayout>

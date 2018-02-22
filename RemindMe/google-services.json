@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "529098854240",
+    "firebase_url": "https://remindme-83c38.firebaseio.com",
+    "project_id": "remindme-83c38",
+    "storage_bucket": "remindme-83c38.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:529098854240:android:de59fe5ba5511d7c",
+        "android_client_info": {
+          "package_name": "com.example.prince.remindme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "529098854240-fpgork2hl99ra73i3em2ug7uqfmoii6l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.prince.remindme",
+            "certificate_hash": "799e3c96181101e5e6e3ffaad58c351e38490017"
+          }
+        },
+        {
+          "client_id": "529098854240-odafjvlevsl8gh428n17j9tq8pgc4e15.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9sNS8tWiRpknMyKj0NzEe3Lbdx6beIns"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "529098854240-odafjvlevsl8gh428n17j9tq8pgc4e15.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

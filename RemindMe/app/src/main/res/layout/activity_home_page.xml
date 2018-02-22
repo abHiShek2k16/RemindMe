@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.prince.remindme.HomePage"
+    android:background="@drawable/mainback">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#3333cc"
+        android:id="@+id/toolbar"
+        android:layout_gravity="top|start">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextClock
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/clock"
+                android:fontFamily="casual"
+                android:textStyle="italic"
+                android:textSize="32sp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textColor="#ffffff" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#ffffff" />
+
+
+            <TextView
+                android:paddingLeft="32dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="ReMInd Me"
+                android:fontFamily="casual"
+                android:textStyle="italic"
+                android:textSize="32sp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="182dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentEnd="true"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="250dp">
+
+       <android.support.v7.widget.AppCompatButton
+           android:layout_width="128dp"
+           android:layout_height="wrap_content"
+           android:id="@+id/addclass"
+           android:text="Add Class"
+           android:background="@drawable/buttonsec"
+           android:textColor="#ffffff"/>
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/viewclass"
+            android:text="View Class"
+            android:background="@drawable/buttonsec"
+            android:textColor="#ffffff"
+            android:layout_marginTop="32dp"/>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabcall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="180dp"
+        android:layout_marginEnd="11dp"
+        android:clickable="true"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/call"
+        app:backgroundTint="#c2c2f0"
+        android:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        android:layout_gravity="bottom|end"
+        android:visibility="invisible"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginEnd="11dp"
+        android:clickable="true"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/email"
+        app:backgroundTint="#7070db"
+        android:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        android:layout_gravity="bottom|end"
+        android:visibility="invisible"/>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="11dp"
+        android:clickable="true"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_add_circle_outline_black_24dp"
+        app:backgroundTint="#3333cc"
+        android:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        android:layout_gravity="bottom|end"/>
+
+
+</android.support.design.widget.CoordinatorLayout>
