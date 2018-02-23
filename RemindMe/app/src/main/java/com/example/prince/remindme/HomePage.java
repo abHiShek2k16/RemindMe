@@ -19,6 +19,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.common.api.Api;
+import com.google.firebase.auth.FirebaseAuth;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -143,6 +144,7 @@ public class HomePage extends AppCompatActivity {
                 startActivity(new Intent(HomePage.this,AboutMe.class));
                 break;
             case R.id.logout:
+                FirebaseAuth.getInstance().signOut();
                 finish();
                 System.exit(0);
                 break;

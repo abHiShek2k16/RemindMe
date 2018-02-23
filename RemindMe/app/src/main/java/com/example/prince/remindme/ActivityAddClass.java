@@ -161,6 +161,7 @@ public class ActivityAddClass extends AppCompatActivity implements AdapterView.O
                     Intent i = new Intent(ActivityAddClass.this,HomePage.class);
                     i.putExtra("Value","0");
                     ActivityAddClass.this.startActivity(i);
+                    finish();
                 }
                 else{
                     Toast.makeText(ActivityAddClass.this,"Please!! Fill all the Detail to add new Class.....",Toast.LENGTH_LONG).show();

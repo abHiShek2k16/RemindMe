@@ -31,7 +31,8 @@
 
         <activity
             android:name=".ActivityLogin"
-            android:theme="@style/AppTheme.nobar" />
+            android:theme="@style/AppTheme.nobar"
+            android:windowSoftInputMode="adjustResize"/>
         <activity
             android:name=".ActivitySignup"
             android:theme="@style/AppTheme.nobar"

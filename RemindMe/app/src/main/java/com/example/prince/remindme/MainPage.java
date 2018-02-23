@@ -229,7 +229,7 @@ public class MainPage extends AppCompatActivity{
 
 
         //Skip Button
-        skipfrnw = (TextView)findViewById(R.id.skip);
+         skipfrnw = (TextView)findViewById(R.id.skip);
          skipfrnw.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View v) {

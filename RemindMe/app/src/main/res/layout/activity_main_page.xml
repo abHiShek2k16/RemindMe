@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context="com.example.prince.remindme.MainPage"
     android:background="@drawable/mainback">
 
@@ -14,7 +13,9 @@
         android:src="@drawable/bussiness"
         android:layout_gravity="center"
         android:layout_marginTop="16dp"
-        android:background="@drawable/backimageicon"/>
+        android:background="@drawable/backimageicon"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/businessimage"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -25,13 +26,16 @@
         android:textStyle="italic"
         android:fontFamily="cursive"
         android:textColor="#D50000"
-        android:id="@+id/checkconnection"/>
+        android:id="@+id/checkconnection"
+        android:layout_below="@id/businessimage"
+        android:visibility="invisible"/>
 
 
   <TabHost
       android:id="@+id/tabhost"
       android:layout_width="match_parent"
-      android:layout_height="match_parent">
+      android:layout_height="match_parent"
+      android:layout_below="@id/checkconnection">
 
     <LinearLayout
         android:id="@+id/line"
@@ -68,4 +72,4 @@
       </FrameLayout>
     </LinearLayout>
   </TabHost>
-</LinearLayout>
+</RelativeLayout>
