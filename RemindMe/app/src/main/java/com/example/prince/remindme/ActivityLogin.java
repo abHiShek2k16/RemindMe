@@ -19,6 +19,5 @@ public class ActivityLogin extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_login);
 
-
     }
 }
