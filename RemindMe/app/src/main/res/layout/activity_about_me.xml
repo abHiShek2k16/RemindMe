@@ -5,23 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.prince.remindme.AboutMe"
-    android:background="@drawable/mainback">
+    android:background="@drawable/mainback"
+    android:id="@+id/aboutMe">
 
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#3333cc"
+        android:background="#ff1a75"
         android:id="@+id/toolbar2">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <TextView
                 android:id="@+id/textViewdev"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="\n\nDesigned and Developed BY\nAbhishek Kumar\nBIT Patna\nIT\nBE/15238/16\n"
+                android:text="\n\nDesigned and Developed BY\nAbhishek\n\n"
                 android:textSize="22sp"
                 android:textAlignment="center"
                 android:textStyle="bold"
@@ -40,7 +42,7 @@
                 android:id="@+id/textViewcon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="\nContact Us\n\+91-9546167192\n+91-7050316935\n\nEmail : abhishek.bitpatna@gmail.com\n"
+                android:text="\nContact Us\n\+91-9546167192\n+91-7050316935\n\nEmail : abhishek.appdev@gmail.com\n"
                 android:textSize="22sp"
                 android:textAlignment="center"
                 android:textStyle="bold"
@@ -52,8 +54,8 @@
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="12dp"
@@ -61,7 +63,7 @@
         android:clickable="true"
         app:fabSize="normal"
         app:srcCompat="@drawable/email"
-        app:backgroundTint="#3333cc" />
+        app:backgroundTint="#D50000" />
 
 
 </RelativeLayout>

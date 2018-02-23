@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,9 +10,10 @@
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:background="#3333cc"
+        android:background="#ff1a75"
         android:id="@+id/toolbar"
         android:layout_gravity="top|start">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -39,7 +40,7 @@
                 android:paddingLeft="32dp"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="ReMInd Me"
+                android:text="ReMinD Me"
                 android:fontFamily="casual"
                 android:textStyle="italic"
                 android:textSize="32sp"
@@ -50,50 +51,51 @@
 
     </android.support.v7.widget.Toolbar>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="182dp"
-        android:layout_below="@+id/toolbar"
-        android:layout_alignParentEnd="true"
-        android:paddingLeft="32dp"
-        android:paddingRight="32dp"
-        android:layout_gravity="bottom|end"
-        android:layout_marginBottom="250dp">
-
        <android.support.v7.widget.AppCompatButton
-           android:layout_width="128dp"
+           android:layout_width="256dp"
            android:layout_height="wrap_content"
            android:id="@+id/addclass"
            android:text="Add Class"
-           android:background="@drawable/buttonsec"
-           android:textColor="#ffffff"/>
+           android:layout_centerInParent="true"
+           android:background="@drawable/button"
+           android:textColor="#ffffff"
+           android:elevation="32dp"
+           android:shadowColor="#000000"
+           android:textSize="22sp"
+           android:textStyle="bold"
+           android:textAllCaps="true"
+           android:fontFamily="monospace"/>
 
 
         <android.support.v7.widget.AppCompatButton
-            android:layout_width="128dp"
+            android:layout_width="256dp"
             android:layout_height="wrap_content"
             android:id="@+id/viewclass"
             android:text="View Class"
-            android:background="@drawable/buttonsec"
+            android:layout_below="@id/addclass"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button"
             android:textColor="#ffffff"
-            android:layout_marginTop="32dp"/>
-
-    </LinearLayout>
+            android:layout_marginTop="32dp"
+            android:elevation="32dp"
+            android:shadowColor="#000000"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:fontFamily="monospace"/>
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fabcall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="180dp"
-        android:layout_marginEnd="11dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_above="@id/fabmail"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
         android:clickable="true"
         app:fabSize="normal"
         app:srcCompat="@drawable/call"
-        app:backgroundTint="#c2c2f0"
+        app:backgroundTint="#D50000"
         android:elevation="6dp"
         app:pressedTranslationZ="12dp"
         android:layout_gravity="bottom|end"
@@ -101,16 +103,16 @@
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fabmail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_above="@id/fab"
         android:layout_alignParentEnd="true"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="16dp"
         android:layout_marginEnd="11dp"
         android:clickable="true"
         app:fabSize="normal"
         app:srcCompat="@drawable/email"
-        app:backgroundTint="#7070db"
+        app:backgroundTint="#D50000"
         android:elevation="6dp"
         app:pressedTranslationZ="12dp"
         android:layout_gravity="bottom|end"
@@ -119,8 +121,8 @@
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="12dp"
@@ -128,10 +130,10 @@
         android:clickable="true"
         app:fabSize="normal"
         app:srcCompat="@drawable/ic_add_circle_outline_black_24dp"
-        app:backgroundTint="#3333cc"
+        app:backgroundTint="#D50000"
         android:elevation="6dp"
         app:pressedTranslationZ="12dp"
         android:layout_gravity="bottom|end"/>
 
 
-</android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>

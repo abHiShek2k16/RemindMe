@@ -104,7 +104,7 @@
             android:layout_marginLeft="32dp"
             android:layout_marginRight="32dp"
             android:layout_marginBottom="16dp"
-            android:drawableRight="@drawable/arrow"
+            android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
             android:paddingRight="32dp"/>
 
         </LinearLayout>

@@ -5,12 +5,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:paddingBottom="10dp"
-    android:background="#e6ecff">
+    android:background="@drawable/mainback">
 
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:background="#3333cc">
+        android:background="#ff1a75">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -23,8 +23,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:id="@+id/spinner2"
-                android:layout_marginRight="8dp"
-                android:background="@drawable/dropmenu"/>
+                android:layout_marginRight="8dp" />
 
             <Switch
                 android:layout_width="wrap_content"

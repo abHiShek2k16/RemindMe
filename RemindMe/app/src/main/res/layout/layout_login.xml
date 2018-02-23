@@ -214,7 +214,7 @@
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="32dp"
             android:layout_marginRight="32dp"
-            android:drawableRight="@drawable/arrow"
+            android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
             android:paddingRight="32dp"
             android:background="@drawable/button"
             android:elevation="0dp"

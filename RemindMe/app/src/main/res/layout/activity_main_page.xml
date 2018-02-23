@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.prince.remindme.MainPage"
-    android:background="#ff1a75">
+    android:background="@drawable/mainback">
 
     <ImageView
         android:layout_width="100dp"
@@ -24,7 +24,7 @@
         android:textSize="22sp"
         android:textStyle="italic"
         android:fontFamily="cursive"
-        android:textColor="#ffff33"
+        android:textColor="#D50000"
         android:id="@+id/checkconnection"/>
 
 
