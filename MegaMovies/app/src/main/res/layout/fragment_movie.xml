@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.MovieFragment">
+
+    <ProgressBar
+        android:id="@+id/movieFragmentPb"
+        android:layout_width="@dimen/x48"
+        android:layout_height="@dimen/x32"
+        android:layout_centerHorizontal="true"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/movieFragmentRv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/movieFragmentPb"
+        android:layout_marginTop="@dimen/x4"
+        android:layout_marginBottom="@dimen/x48" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="@dimen/x8"
+        android:paddingTop="@dimen/x8"
+        android:layout_marginLeft="@dimen/x16"
+        android:layout_marginRight="@dimen/x16">
+
+        <Button
+            android:id="@+id/movieFragmentPreviousBtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x32"
+            android:text="@string/previous"
+            android:textColor="@color/black"
+            android:textSize="@dimen/x16S"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:textAllCaps="false"
+            android:layout_marginRight="@dimen/x4"
+            android:visibility="invisible"
+            android:elevation="@dimen/x4"/>
+
+        <Button
+            android:id="@+id/movieFragmentNextBtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x32"
+            android:text="@string/next"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x16S"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_weight="1"
+            android:background="@color/black"
+            android:textAllCaps="false"
+            android:layout_marginLeft="@dimen/x4"
+            android:visibility="invisible"
+            android:elevation="@dimen/x4"/>
+
+    </LinearLayout>
+</RelativeLayout>

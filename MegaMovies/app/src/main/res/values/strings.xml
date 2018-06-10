@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">MegaMovies</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- API KEY -->
+    <string name="api_key"> <!-- place you API KEY HERE --> </string>
+
+    <!-- BASE URL -->
+    <string name="movie_base_url">https://api.themoviedb.org/3/</string>
+    <string name="image_base_url">https://image.tmdb.org/t/p/w500</string>
+    <string name="youtube_video_image_base_url"></string>
+    <string name="video_web_base_url">http://www.youtube.com/watch?v=</string>
+    <string name="video_app_base_url">vnd.youtube:</string>
+    <string name="trailer_image_base_url">https://img.youtube.com/vi/</string>
+    <string name="trailer_image_type_url">/0.jpg</string>
+    <string name="popular_movie">popular</string>
+    <string name="top_rated_movie">top_rated</string>
+    <string name="upcoming">upcoming</string>
+    <string name="now_playing">now_playing</string>
+    <string name="on_the_air">on_the_air</string>
+    <string name="airing_today">airing_today</string>
+    <string name="append_query_movie">videos,reviews,casts</string>
+    <string name="append_query_tv">videos,reviews</string>
+
+    <!-- XML String -->
+    <string name="popular_str">Popular</string>
+    <string name="top_rated_str">Top Rated</string>
+    <string name="latest_str">Latest</string>
+    <string name="upcoming_str">Upcoming</string>
+    <string name="now_playing_str">Now Playing</string>
+    <string name="on_the_air_str">On The Air</string>
+    <string name="airing_today_str">Airing Today</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="image_desc">Image</string>
+    <string name="length">Length :</string>
+    <string name="rating">Rating :</string>
+    <string name="total_rating">Total Vote :</string>
+    <string name="runtime">Runtime :</string>
+    <string name="first_air_date">First Episode :</string>
+    <string name="last_air_date">Last Episode :</string>
+    <string name="releasing_date">Releasing Date :</string>
+    <string name="description">Description</string>
+    <string name="trailer">Trailer</string>
+    <string name="video">Video</string>
+    <string name="cast">Casts</string>
+    <string name="creater">Created By</string>
+    <string name="review">Read All Review</string>
+    <string name="bio">Biography : </string>
+
+
+    <!--    Activity String -->
+    <string name="intent_id_passing">INTENT_ID</string>
+
+    <!--    Error   -->
+    <string name="info_unavailable">Info UnAvailable</string>
+    <string name="empty"></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

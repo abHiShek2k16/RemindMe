@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/onTheAirTv"
+            android:orderInCategory="10"
+            android:title="@string/on_the_air_str"
+            app:showAsAction="never|collapseActionView" />
+
+        <item
+            android:id="@+id/popularTv"
+            android:checked="true"
+            android:orderInCategory="10"
+            android:title="@string/popular_str"
+            app:showAsAction="never|collapseActionView" />
+
+        <item
+            android:id="@+id/airingTodayTv"
+            android:orderInCategory="10"
+            android:title="@string/airing_today_str"
+            app:showAsAction="never|collapseActionView" />
+
+        <item
+            android:id="@+id/mostRatedTv"
+            android:orderInCategory="10"
+            android:title="@string/top_rated_str"
+            app:showAsAction="never" />
+    </group>
+</menu>

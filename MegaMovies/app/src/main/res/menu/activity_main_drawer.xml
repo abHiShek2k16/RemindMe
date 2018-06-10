@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navMv"
+            android:title="Movie" />
+        <item
+            android:id="@+id/navTv"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Tv" />
+        <item
+            android:id="@+id/navFav"
+            android:icon="@drawable/navigation_favorites"
+            android:title="Favourite" />
+        <item
+            android:id="@+id/navSetting"
+            android:icon="@drawable/navigation_settings"
+            android:title="Setting" />
+    </group>
+
+    <item android:title="Close App">
+        <menu>
+            <item
+                android:id="@+id/navExit"
+                android:title="Exit" />
+        </menu>
+    </item>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/navShare"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/navRate"
+                android:title="Rate" />
+        </menu>
+    </item>
+
+</menu>
